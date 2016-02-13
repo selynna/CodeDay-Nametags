@@ -2,6 +2,7 @@
     <head>
         <meta name="viewport" content="width=device-width, user-scalable=no" />
         <title>CodeDay - Nametags</title>
+        <link rel="icon" type="image/png" href="assets/favicon.png" />
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,500' rel='stylesheet' type='text/css'>
         <script src="http://labelwriter.com/software/dls/sdk/js/DYMO.Label.Framework.latest.js" type="text/javascript" charset="UTF-8"> </script>
@@ -17,15 +18,11 @@
                     </header>
                     <form>
                     <input id="fullName" type="text" autofocus="true" maxlength="21" autocomplete="off" placeholder="Full Name"/> is a
-                    <select type="select" id="typeName" name="person">
-                        <option value="Participant">Participant</option>
-                        <option value="Teacher">Teacher</option>
-                        <option value="Visitor">Visitor</option>
-                        <option value="Sponsor">Sponsor</option>
-                        <option value="Volunteer">Volunteer</option>
-                    </select>
-                        <button id="btn" type="submit">Print</button>
-                    </form>     
+                    <input id="typeName" name="person" type="text" maxlength="21" autocomplete="off" value="Participant"/>
+                    <button id="btn" type="submit">Print</button>
+                    </form>
+                    <br>
+                    <p>Type field: Participant, Teacher, Visitor, Sponsor, etc.</p>    
                     <footer>
                         <p>You'll need <a target="_blank" href="http://www.dymo.com/en-US/labelwriter-450-label-printer#tabContainer">DYMO Software</a> and the <a target="_blank" href="fonts/ProximaNova-Regular.otf">font files</a>.</p>
                     </footer>
